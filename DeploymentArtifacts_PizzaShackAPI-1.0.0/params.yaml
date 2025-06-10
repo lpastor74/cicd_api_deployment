@@ -1,0 +1,35 @@
+environments:
+    - name: PROD
+      configs:
+          endpoints:
+              production:
+                  url: 'https://localhost:9463/am/sample/pizzashack/v1/api/'
+              sandbox:
+                  url: 'https://localhost:9463/am/sample/pizzashack/v1/api/'
+          security:
+              enabled:
+              type:
+              username:
+              password:
+          deploymentEnvironments:
+              - displayOnDevportal: true
+                deploymentEnvironment: Default
+                deploymentVhost: localhost
+          certs:
+              - hostName:
+                alias:
+                path:
+              - hostName:
+                alias:
+                path:
+          mutualSslCerts:
+              - tierName:
+                alias:
+                path:
+              - tierName:
+                alias:
+                path:
+          policies:
+              - Gold
+              - Silver
+              - Bronze 
