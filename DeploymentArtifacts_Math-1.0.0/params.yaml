@@ -1,0 +1,30 @@
+environments:
+    - name: PROD
+      configs:
+          endpoints:
+              production:
+                  url: 'http://www.dneonline.com/calculator.asmx'
+              sandbox:
+                  url: 'http://www.dneonline.com/calculator.asmx'
+          deploymentEnvironments:
+              - displayOnDevportal: true
+                deploymentEnvironment: Default
+                deploymentVhost: localhost
+          policies:
+              - Gold 
+              - Silver
+              - Bronze  
+    - name: QA 
+      configs:
+          endpoints:
+              production:
+                  url: 'http://www.dneonline.com/calculator.asmx'
+              sandbox:
+                  url: 'http://www.dneonline.com/calculator.asmx'
+          deploymentEnvironments:
+              - displayOnDevportal: true
+                deploymentEnvironment: Default
+                deploymentVhost: localhost
+          policies:
+              - Silver 
+              
