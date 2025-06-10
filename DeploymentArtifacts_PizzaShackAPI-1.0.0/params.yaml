@@ -1,35 +1,16 @@
 environments:
-    - name: PROD
-      configs:
+     - name: PROD
+       configs:
           endpoints:
               production:
                   url: 'https://localhost:9463/am/sample/pizzashack/v1/api/'
               sandbox:
-                  url: 'https://localhost:9463/am/sample/pizzashack/v1/api/'
-          security:
-              enabled:
-              type:
-              username:
-              password:
+                  url: 'http://www.dneonline.com/calculator.asmx'
           deploymentEnvironments:
               - displayOnDevportal: true
                 deploymentEnvironment: Default
                 deploymentVhost: localhost
-          certs:
-              - hostName:
-                alias:
-                path:
-              - hostName:
-                alias:
-                path:
-          mutualSslCerts:
-              - tierName:
-                alias:
-                path:
-              - tierName:
-                alias:
-                path:
           policies:
-              - Gold
+              - Gold 
               - Silver
               - Bronze 
