@@ -12,3 +12,16 @@ environments:
                 deploymentVhost: localhost
           policies:
               - Gold  
+    - name: DEV
+      configs:
+          endpoints:
+              production:
+                  url: 'https://dev.com'
+              sandbox:
+                  url: 'http://sandbox_dev.com'
+          deploymentEnvironments:
+              - displayOnDevportal: true
+                deploymentEnvironment: Default
+                deploymentVhost: localhost
+          policies:
+              - Gold  

@@ -13,4 +13,17 @@ environments:
           policies:
               - Gold 
               - Silver
+              - Bronze
+     - name: DEV
+       configs:
+          endpoints:
+              production:
+                  url: 'https://localhost:9453/am/sample/pizzashack/v1/api/'
+              sandbox:
+                  url: 'https://localhost:9453/am/sample/pizzashack/v1/api/'
+          deploymentEnvironments:
+              - displayOnDevportal: true
+                deploymentEnvironment: Default
+                deploymentVhost: localhost
+          policies:
               - Bronze 

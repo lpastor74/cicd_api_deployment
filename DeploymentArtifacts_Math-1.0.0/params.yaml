@@ -14,7 +14,7 @@ environments:
               - Gold 
               - Silver
               - Bronze  
-    - name: QA 
+    - name: DEV 
       configs:
           endpoints:
               production:
