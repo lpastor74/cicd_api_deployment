@@ -1,0 +1,14 @@
+environments:
+    - name: PROD
+      configs:
+          endpoints:
+              production:
+                  url: 'https://prod.com'
+              sandbox:
+                  url: 'http://sandbox_prod.com'
+          deploymentEnvironments:
+              - displayOnDevportal: true
+                deploymentEnvironment: Default
+                deploymentVhost: localhost
+          policies:
+              - Gold  
