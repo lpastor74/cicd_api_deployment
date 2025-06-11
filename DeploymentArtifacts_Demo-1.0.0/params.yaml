@@ -1,0 +1,16 @@
+environments:
+    - name:
+      configs:
+          endpoints:
+              production:
+                  url: "http://localhost.prod.com"
+          mutualSslCerts:
+              - tierName:
+                alias:
+                path:
+              - tierName:
+                alias:
+                path:
+          policies:
+              - Gold
+              - Silver 
