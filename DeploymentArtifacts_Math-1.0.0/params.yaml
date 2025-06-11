@@ -12,8 +12,6 @@ environments:
                 deploymentVhost: localhost
           policies:
               - Gold 
-              - Silver
-              - Bronze  
     - name: DEV 
       configs:
           endpoints:

@@ -1,16 +1,17 @@
 environments:
-    - name:
+    - name: PROD
       configs:
           endpoints:
               production:
-                  url: "http://localhost.prod.com"
-          mutualSslCerts:
-              - tierName:
-                alias:
-                path:
-              - tierName:
-                alias:
-                path:
+                  url: 'http://production.com/calculator.asmx'
+              sandbox:
+                  url: 'http://www.production.sand.com/calculator.asmx'
+          deploymentEnvironments:
+              - displayOnDevportal: true
+                deploymentEnvironment: Default
+                deploymentVhost: localhost
           policies:
-              - Gold
-              - Silver 
+              - Gold 
+              - Silver
+
+              

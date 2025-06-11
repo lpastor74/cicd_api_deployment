@@ -11,7 +11,7 @@ environments:
                 deploymentEnvironment: Default
                 deploymentVhost: localhost
           policies:
-              - Gold  
+              - Silver  
     - name: DEV
       configs:
           endpoints:
