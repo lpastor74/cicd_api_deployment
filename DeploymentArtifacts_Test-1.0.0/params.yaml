@@ -3,6 +3,6 @@ environments:
       configs:
           endpoints:
               production:
-                  url:"https://localhost.prod.com:999" 
+                  url: 'https://localhost.prod.com:999'
           policies:
               - Gold
